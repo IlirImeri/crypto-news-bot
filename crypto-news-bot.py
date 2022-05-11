@@ -50,6 +50,6 @@ while True:
 
     if title != previous_article:
         previous_article = title
-        print(title, source, date)
+        publish_to_telegram(title, source, date)
 
     time.sleep(60)
